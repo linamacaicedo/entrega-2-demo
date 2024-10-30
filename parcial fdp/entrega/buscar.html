@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adharasbeauty - Buscar Productos</title>
+  <style>
+    .product {
+      display: none; /* Por defecto, los productos están ocultos */
+      margin: 10px 0;
+    }
+    .product.show {
+      display: block; /* Muestra los productos que coincidan con la búsqueda */
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <input type="text" id="search" placeholder="Buscar productos..." onkeyup="filterProducts()" />
+  </header>
+
+  <section>
+    <div class="product" data-name="Brocha Profesional">Brocha Profesional</div>
+    <div class="product" data-name="Paleta de Sombras">Paleta de Sombras</div>
+    <div class="product" data-name="Labial Matte">Labial Matte</div>
+    <div class="product" data-name="Corrector Líquido">Corrector Líquido</div>
+    <div class="product" data-name="Rímel Volumen">Rímel Volumen</div>
+    <!-- Agrega más productos aquí si es necesario -->
+  </section>
+
+  <!-- Mensaje de "No se encontraron productos" -->
+  <p id="no-results" style="display:none; color: red;">No se encontraron productos</p>
+
+  <script>
+    function filterProducts() {
+      const searchInput = document.getElementById('search').value.toLowerCase();
+      const products = document.querySelectorAll('.product');
+      let visibleCount = 0;
+
+      products.forEach(product => {
+        const productName = product.getAttribute('data-name').toLowerCase();
+
+        // Comprobamos si el nombre del producto incluye el texto de búsqueda
+        if (productName.includes(searchInput) && searchInput.length > 0) {
+          product.classList.add('show'); // Muestra los productos que coincidan
+          visibleCount++;
+        } else {
+          product.classList.remove('show'); // Oculta los productos que no coincidan
+        }
+      });
+
+      const noResultsMessage = document.getElementById('no-results');
+      if (visibleCount === 0) {
+        noResultsMessage.style.display = 'block'; // Muestra el mensaje si no hay productos visibles
+      } else {
+        noResultsMessage.style.display = 'none'; // Oculta el mensaje si hay productos visibles
+      }
+
+      console.log(`Visible products: ${visibleCount}`); // Para depuración
+    }
+  </script>
+  
+  <script src="productos filtrados.js"></script> <!-- Asegúrate de que este archivo no esté causando conflictos -->
+
+</body>
+</html>
+

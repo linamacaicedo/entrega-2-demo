@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adharasbeauty</title>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="estilosprincipal.css">
+</head>
+<body>
+
+    <header>
+        <h1></h1>
+        <img src="./img/banner.png" alt="Adharasbeauty" class="banner">
+    </header>
+
+    <div class="top-bar">
+      <input type="text" id="search" placeholder="Buscar productos..." onkeyup="filterProducts()">
+      <div class="user-cart">
+        <a href="./registro.html" class="user">Usuario</a>
+        <a href="carrito.html" class="cart">Carrito</a>
+      </div>
+    </div>
+
+  <!-- Banner con nombre de la marca -->
+  <section class="brand-banner">
+    <h1>Adharasbeauty</h1>
+  </section>
+
+  <!-- Barra de categorías -->
+  <nav class="categories">
+    <ul>
+      <li><a href="accesorios.html">Accesorios</a></li>
+      <li><a href="brochas.html">Brochas</a></li>
+      <li><a href="cejas.html">Cejas</a></li>
+      <li><a href="corporal.html">Corporal</a></li>
+      <li><a href="cuidado-capilar.html">Cuidado Capilar</a></li>
+      <li><a href="labios.html">Labios</a></li>
+      <li><a href="ojos.html">Ojos</a></li>
+      <li><a href="piel.html">Piel</a></li>
+    </ul>
+  </nav>
+
+ <!-- Banner rotativo publicitario -->
+<section class="banner">
+    <div class="slideshow-container">
+      <div class="mySlides fade">
+        <img src="./img/baner publi 1.jpg" alt="Banner 1" style="max-height: 300px;">
+      </div>
+      <div class="mySlides fade">
+        <img src="./img/banner publi 2.jpg" alt="Banner 2" style="max-height: 300px;">
+      </div>
+      <div class="mySlides fade">
+        <img src="./img/Cartel Horizontal Campaña Octubre Rosa Ilustrativo Floral Rosa y Morado .jpg" alt="Banner 3" style="max-height: 300px;">
+      </div>
+      <script src="./js/script.js"></script>
+
+    </div>
+</section>
+
+  <!-- Productos en promoción -->
+  <section class="promotions">
+    <h2>Productos en Promoción</h2>
+    <div class="promotion-slider">
+      <div class="promotions-container">
+        <div class="product">
+            <img src="./img/gloss magia.png" alt="Producto Promoción 1">
+            <h3><a href="detalle-productomagia.html">gloss andromeda</a></h3>
+            <p>Precio: $10.000</p>
+            <a href="./carrito.html" class="btn">Añadir al Carrito</a>
+          </div>
+          
+          
+        <!-- Más productos... -->
+      </div>
+    </div>
+    <button class="prev">←</button>
+    <button class="next">→</button>
+  </section>
+
+  <!-- Productos en cuadrícula -->
+<section class="product-list">
+    <h2>Otros Productos</h2>
+    <div class="product-grid">
+      <!-- Producto 1 -->
+      <div class="product">
+        <img src="./img/iluminador liquido.png" alt="Producto 1">
+        <h3><a href="detalle-productoiluminador.html">iluminador liquido</a></h3>
+        <p>Precio: $25.000</p>
+        <a href="./carrito.html" class="btn">Añadir al Carrito</a>
+      </div>
+      
+      <!-- Producto 2 -->
+      <div class="product">
+        <img src="./img/Screenshot 2024-09-17 235942.png" alt="Producto 2">
+        <h3><a href="detalle-productopolvos.html">Polvos traslucidos</a></h3>
+        <p>Precio: $15.000</p>
+        <a href="./carrito.html" class="btn">Añadir al Carrito</a>
+      </div>
+      
+      <!-- Producto 3 -->
+      <div class="product">
+        <img src="./img/compactos.png" alt="Producto 3">
+        <h3><a href="detalle-productocompactos.html">Polvos compactos</a></h3>
+        <p>Precio: $16.000</p>
+        <a href="./carrito.html" class="btn">Añadir al Carrito</a>
+      </div>
+  
+      <!-- Producto 4 -->
+      <div class="product">
+        <img src="./img/gloss transparente .png" alt="Producto 4">
+        <h3><a href="detalle-productobrillo.html">Brillo magico oro</a></h3>
+        <p>Precio: $12.000</p>
+        <a href="./carrito.html" class="btn">Añadir al Carrito</a>
+      </div>
+  
+      <!-- Producto 5 -->
+      <div class="product">
+        <img src="./img/rubor jelly.png" alt="Producto 5">
+        <h3><a href="detalle-productojelly.html">Rubor Jelly</a></h3>
+        <p>Precio: $18.000</p>
+        <a href="./carrito.html" class="btn">Añadir al Carrito</a>
+      </div>
+  
+      <!-- Producto 6 -->
+      <div class="product">
+        <img src="./img/mantequillax2.png" alt="Producto 6">
+        <h3><a href="detalle-productomant2.html">mantequilla uva</a></h3>
+        <p>Precio: $22.000</p>
+        <a href="./carrito.html" class="btn">Añadir al Carrito</a>
+      </div>
+  
+      <!-- Producto 7 -->
+      <div class="product">
+        <img src="./img/ruconilu.png" alt="Producto 7">
+        <h3><a href="detalle-productoruconilu.html">set rubor, contorno e iluminador</a></h3>
+        <p>Precio: $25.00</p>
+        <a href="./carrito.html" class="btn">Añadir al Carrito</a>
+      </div>
+  
+      <!-- Producto 8 -->
+      <div class="product">
+        <img src="./img/paleta 8.png" alt="Producto 8">
+        <h3><a href="detalle-producto.html">Paleta tonos tierra</a></h3>
+        <p>Precio: $30.000</p>
+        <a href="./carrito.html" class="btn">Añadir al Carrito</a>
+      </div>
+  
+      <!-- Producto 9 -->
+      <div class="product">
+        <img src="./img/paleta.png" alt="Producto 9">
+        <h3><a href="detalle-productopaletatonos frios.html">Paleta tonos frios</a></h3>
+        <p>Precio: $25.000</p>
+        <a href="./carrito.html" class="btn">Añadir al Carrito</a>
+      </div>
+  
+      <!-- Producto 10 -->
+      <div class="product">
+        <img src="./img/set mini brochas ojos.png" alt="Producto 10">
+        <h3><a href="detalle-productobroos.html">brochas ojos</a></h3>
+        <p>Precio: $16.000</p>
+        <a href="./carrito.html" class="btn">Añadir al Carrito</a>
+      </div>
+  
+      <!-- Producto 11 -->
+      <div class="product">
+        <img src="./img/setbrochas platino.png" alt="Producto 11">
+        <h3><a href="detalle-productosetbrpl.html">set brochas platino</a></h3>
+        <p>Precio: $25.000</p>
+        <a href="./carrito.html" class="btn">Añadir al Carrito</a>
+      </div>
+  
+      <!-- Producto 12 -->
+      <div class="product">
+        <img src="./img/lapiz labios.png" alt="Producto 12">
+        <h3><a href="detalle-productolapizlabios.html">lapiz labios</a></h3>
+        <p>Precio: $8.000</p>
+        <a href="./carrito.html" class="btn">Añadir al Carrito</a>
+      </div>
+    </div>
+  </section>
+  
+
+  <script src="script.js"></script>
+</body>
+</html>

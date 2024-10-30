@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito de Compras - Adharas Beauty</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Carrito de Compras</h1>
+    </header>
+
+    <section class="cart-section">
+        <table>
+            <thead>
+                <tr>
+                    <th>Producto</th>
+                    <th>Precio</th>
+                    <th>Cantidad</th>
+                    <th>Total</th>
+                </tr>
+            </thead>
+            <tbody id="cartItems">
+                <!-- Los productos del carrito se agregarán aquí dinámicamente -->
+            </tbody>
+        </table>
+        <p>Total del Carrito: <span id="cartTotal">$0.00</span></p>
+    </section>
+
+    <script src="scripts.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const cartItems = JSON.parse(localStorage.getItem('cart')) || [];
+            let cartHTML = "";
+            let total = 0;
+
+            cartItems.forEach(item => {
+                const itemTotal = item.price * item.quantity;
+                total += itemTotal;
+                cartHTML += `<tr>
+                    <td>${item.name}</td>
+                    <td>$${item.price}</td>
+                    <td>${item.quantity}</td>
+                    <td>$${itemTotal.toFixed(2)}</td>
+                </tr>`;
+            });
+
+            document.getElementById("cartItems").innerHTML = cartHTML;
+            document.getElementById("cartTotal").innerText = `$${total.toFixed(2)}`;
+        });
+    </script>
+</body>
+</html>

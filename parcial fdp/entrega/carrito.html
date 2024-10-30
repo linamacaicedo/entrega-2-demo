@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carrito de Compras</title>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./carrito.css">
+</head>
+<header>
+    <h1></h1>
+    <img src="./img/banner.png" alt="Adharasbeauty" class="banner">
+</header>
+<body>
+  <section class="carrito">
+    <h1>Carrito de Compras</h1>
+
+    <!-- Tabla de productos en el carrito -->
+    <table>
+      <thead>
+        <tr>
+          <th>Producto</th>
+          <th>Cantidad</th>
+          <th>Precio</th>
+          <th>Total</th>
+          <th>Eliminar</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Ejemplo de producto en el carrito -->
+        <tr>
+          <td>Producto 1</td>
+          <td><input type="number" value="1" min="1"></td>
+          <td>$20.00</td>
+          <td>$20.00</td>
+          <td><button class="eliminar">Eliminar</button></td>
+        </tr>
+        <!-- Aquí agregarás más productos -->
+      </tbody>
+    </table>
+
+    <!-- Total del carrito -->
+    <div class="total-carrito">
+      <h3>Total: $20.00</h3>
+      <button id="comprar">Comprar Ahora</button>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>

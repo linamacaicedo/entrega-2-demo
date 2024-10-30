@@ -1,0 +1,154 @@
+* Página de Carrito */
+header {
+    width: 100%;            /* El header ocupará todo el ancho de la página */
+    padding: 0;             /* Sin padding para que la imagen ocupe todo el espacio */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;  /* Fondo blanco para el header */
+    padding: 10px 20px;
+  }
+   
+  /* Estilos del header */
+  header {
+    width: 100%;            /* El header ocupará todo el ancho de la página */
+    padding: 0;             /* Sin padding para que la imagen ocupe todo el espacio */
+  }
+  
+  /* Estilo para la imagen del banner */
+  .banner {
+    width: 100%;            /* Asegura que la imagen ocupe el 100% del ancho del header */
+    height: auto;           /* Mantiene la proporción de la imagen */
+    display: block;         /* Elimina el espacio blanco que a veces queda debajo de la imagen */
+  }
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fdaec3; /* Color de fondo */
+  }
+  
+  header {
+    background-color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .top-bar input[type="text"] {
+    padding: 10px;
+    width: 300px;
+    border: 2px solid #ed5a87;
+    border-radius: 5px;
+  }
+  
+
+  .user-cart {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .user-cart a {
+    margin-left: 20px; /* Separa el usuario del carrito */
+    text-decoration: none;
+    color: #ed5a87; 
+  }
+  
+  .user-cart a:last-child {
+    margin-left: auto; /* Empuja el carrito al extremo derecho */
+  }
+   
+  .cart {
+    margin-right: 20px; /* Ajusta este valor según cuánto espacio quieras del borde derecho */
+  }
+
+  /* Barra de categorías */
+  .categories {
+    background-color: #fff;
+    padding: 10px 0;
+  }
+  
+  .categories ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+  }
+  
+  .categories ul li {
+    display: inline;
+    margin: 0 10px;
+  }
+  
+  .categories ul li a {
+    text-decoration: none;
+    color: #ed5a87;
+  }
+  
+  /* Título de la categoría */
+  .category-title {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #fff;
+  }
+  
+  .category-title h1 {
+    color: #ed5a87;
+  }
+  
+  /* Productos en cuadrícula */
+  .product-list {
+    padding: 30px 0;
+  }
+  
+  .product-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  .product-list h2 {
+    color: #ed5a87;
+    text-align: center;
+  }
+  
+  .product-grid .product {
+    background-color: white;
+    border: 2px solid #ed5a87;
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .product-grid img {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+  }
+  
+  .product-grid h3 {
+    margin: 10px 0;
+    color: black;
+  }
+  
+  .product-grid p {
+    color: gray;
+  }
+  
+  .product-grid a.btn {
+    display: block;
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #ed5a87;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+  }
+  
+  .product-grid a.btn:hover {
+    background-color: #d94d6f;
+  }
+  

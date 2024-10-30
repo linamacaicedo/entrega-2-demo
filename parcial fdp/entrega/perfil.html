@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil de Usuario</title>
+    <link rel="stylesheet" href="estilosprincipal.css">
+</head>
+<body>
+
+    <header>
+        <h1>Adharasbeauty</h1>
+        <img src="./img/banner.png" alt="Banner" class="banner">
+        <div class="top-bar">
+            <input type="text" placeholder="Buscar productos..." class="search-bar">
+            <div class="user-cart">
+                <a href="./registro.html" class="user">Usuario</a>
+                <a href="./carrito.html" class="cart">Carrito</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Sección de perfil de usuario -->
+    <div class="profile-container">
+        <div class="profile-header">
+            <div class="profile-photo">
+                <div class="photo-placeholder" id="profile-photo">AB</div> <!-- Iniciales Genéricas -->
+                <input type="file" id="upload-photo" style="display:none;">
+                <div class="camera-icon" id="camera-icon">📷</div>
+            </div>
+            <div class="profile-info">
+                <h2 id="username">Nombre de Usuario</h2> <!-- Texto Genérico -->
+                <button id="edit-name-btn">✏️</button>
+                <input type="text" id="edit-name-input" style="display:none;" value="Nombre de Usuario">
+                <button id="save-name-btn" style="display:none;">Guardar</button>
+                <p>correo@ejemplo.com</p> <!-- Correo Genérico -->
+                <p class="level">Estás en nivel 1 - Mercado Puntos</p>
+            </div>
+        </div>
+
+        <div class="profile-options">
+            <div class="option" id="security-option">
+                <span class="icon">&#128274;</span>
+                <div class="option-info">
+                    <p>Seguridad</p>
+                    <p class="pending">Tienes configuraciones pendientes.</p>
+                </div>
+            </div>
+            <div class="more-info" id="security-info" style="display:none;">
+                <p>Para mejorar tu seguridad, completa la verificación de dos pasos y actualiza tu contraseña.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

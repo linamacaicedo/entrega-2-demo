@@ -1,0 +1,118 @@
+* Página de Carrito */
+header {
+    width: 100%;            /* El header ocupará todo el ancho de la página */
+    padding: 0;             /* Sin padding para que la imagen ocupe todo el espacio */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;  /* Fondo blanco para el header */
+    padding: 10px 20px;
+  }
+   
+  /* Estilos del header */
+  header {
+    width: 100%;            /* El header ocupará todo el ancho de la página */
+    padding: 0;             /* Sin padding para que la imagen ocupe todo el espacio */
+  }
+  
+  /* Estilo para la imagen del banner */
+  .banner {
+    width: 100%;            /* Asegura que la imagen ocupe el 100% del ancho del header */
+    height: auto;           /* Mantiene la proporción de la imagen */
+    display: block;         /* Elimina el espacio blanco que a veces queda debajo de la imagen */
+  }
+.producto-detalle {
+    max-width: 1000px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    border: 2px solid #ed5a87;
+    border-radius: 15px;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .producto-info {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .imagen-producto img {
+    width: 400px;
+    height: auto;
+    border-radius: 15px;
+  }
+  
+  .info-basica {
+    flex-grow: 1;
+  }
+  
+  .info-basica h1 {
+    color: #ed5a87;
+    margin-bottom: 10px;
+  }
+  
+  .info-basica h2 {
+    color: #ed5a87;
+    margin-bottom: 20px;
+  }
+  
+  .info-basica button {
+    background-color: #ed5a87;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+  }
+  
+  .info-basica button:hover {
+    opacity: 0.8;
+  }
+  
+  /* Productos relacionados */
+  .productos-relacionados {
+    max-width: 1000px;
+    margin: 50px auto;
+    text-align: center;
+  }
+  
+  .relacionados-contenedor {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+  }
+  
+  .producto {
+    background-color: #fff;
+    border: 2px solid #ed5a87;
+    border-radius: 15px;
+    width: 180px;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .producto img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+  }
+  
+  .producto h3 {
+    margin: 10px 0;
+  }
+  
+  .producto button {
+    background-color: #ed5a87;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .producto button:hover {
+    opacity: 0.8;
+  }
+  

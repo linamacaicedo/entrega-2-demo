@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - Adhara's Beauty</title>
+    <link rel="stylesheet" href="./stylessign up.css">
+</head>
+<body>
+    <div class="auth-wrapper">
+        <div class="auth-box">
+            <div class="auth-header">
+                <img src="./img/logo.jpg" alt="Adhara's Beauty Logo">
+                <h2>Crea una Cuenta</h2>
+                <p>Únete a nuestra comunidad</p>
+            </div>
+            <form id="signupForm" class="auth-form">
+                <label for="name">Nombre Completo</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="password">Contraseña</label>
+                <input type="password" id="password" name="password" required>
+                
+                <button type="button" onclick="redirectToSuccess()" class="auth-btn">Crear Cuenta</button>
+            </form>
+            
+            <p class="auth-footer">¿Ya tienes cuenta? <a href="login.html">Inicia sesión aquí</a></p>
+        </div>
+    </div>
+    
+    <script>
+        function redirectToSuccess() {
+            window.location.href = "registro_exitoso.html";
+        }
+    </script>
+</body>
+</html>

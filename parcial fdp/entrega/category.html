@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adharas Beauty - Category</title>
+    <link rel="stylesheet" href="stylescategory.css">
+</head>
+<body>
+    <header>
+        <div class="banner">
+            <img src="./img/brand.jpg" alt="Adharas Beauty Banner" class="banner-img">
+            <div class="header-content">
+                <div class="brand-logo">
+                    <h1>Adharas Beauty</h1>
+                </div>
+                <div class="top-bar">
+                    <input type="text" id="search" placeholder="Buscar productos..." onkeyup="filterProducts()">
+                    <div class="user-actions">
+                        <a href="login.html" class="login-btn">Login</a>
+                        <a href="user-profile.html" class="profile-btn">My Profile</a>
+                        <a href="cart.html" class="cart-btn">🛒 Cart</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <nav class="category-bar">
+        <ul>
+            <li><a href="category.html?cat=skincare">Skincare</a></li>
+            <li><a href="category.html?cat=makeup">Makeup</a></li>
+            <li><a href="category.html?cat=fragrance">Fragrance</a></li>
+            <li><a href="category.html?cat=haircare">Haircare</a></li>
+        </ul>
+    </nav>
+
+    <!-- Sección de Productos de Categoría -->
+    <section class="category-products">
+        <h2 id="categoryTitle">Category</h2>
+        <div class="product-grid" id="productGrid">
+            <!-- Ejemplo de Producto -->
+            <div class="product-item">
+                <img src="product1.jpg" alt="Product Image">
+                <p>Product Name</p>
+                <div class="stars">⭐⭐⭐⭐</div>
+                <p class="price">$29.99</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product-item">
+                <img src="product2.jpg" alt="Product Image">
+                <p>Product Name</p>
+                <div class="stars">⭐⭐⭐⭐⭐</div>
+                <p class="price">$34.99</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <!-- Añadir más productos según sea necesario -->
+        </div>
+    </section>
+
+    <footer>
+        <section class="footer-links">
+            <a href="contact.html">Contact Us</a> | 
+            <a href="terms.html">Terms and Conditions</a> | 
+            <a href="privacy.html">Privacy Policy</a>
+        </section>
+    </footer>
+
+    <script src="scriptscategory.js"></script>
+</body>
+</html>
